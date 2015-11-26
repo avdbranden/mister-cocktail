@@ -6,12 +6,25 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-require 'faker'
+Cocktail.destroy_all
+Ingredient.destroy_all
+Dose.destroy_all
 
 10.times do
      Cocktail.create(
-        name: Faker::Hipster.word,
-        ingredients: Faker::Company.catch_phrase,
-        rating: [1,2,3,4,5].sample
+        name: Faker::Company.buzzword
       )
 end
+
+10.times do
+      Ingredient.create(
+        name: Faker::Commerce.product_name
+        )
+end
+
+10.times do
+      Dose.create(
+        description: Faker::Commerce.color
+        )
+end
+

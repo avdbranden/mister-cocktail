@@ -1,4 +1,4 @@
-class CocktailsController < ApplicationController
+class IngredientsController < ApplicationController
   def index
   end
 
@@ -9,12 +9,6 @@ class CocktailsController < ApplicationController
   end
 
   def create
-  end
-
-  def edit
-  end
-
-  def update
   end
 
   def destroy
